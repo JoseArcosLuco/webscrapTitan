@@ -21,7 +21,7 @@ namespace WebScrappingTitanhosting
                
                 Console.WriteLine("Please enter the Keyword :");
                 var Keyword = Console.ReadLine();
-                var adLinks = GetAdLinks("https:////www.zoominfo.com//companies-search//location-australia--victoria--avondale-heights");
+                var adLinks = GetAdLinks("https:////www.zoominfo.com//companies-search/location-australia--victoria--avondale-heights");
                 var lstAdDetails = GetAdDetails(adLinks, Keyword);
                 exportAdsToCsv(lstAdDetails, Keyword);
             }
